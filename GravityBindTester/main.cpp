@@ -1,10 +1,11 @@
 #include <iostream>
-#include <Vector2D.h>
-#include <gtest.h>
+#include <Vector2.h>
+#include <gtest\gtest.h>
 
 using namespace std;
-using GravityBind::Vector2D;
+using GravityBind::Vector2;
 
-void main() {
-	cout << "hue" << endl;
+void main(int argc, char* argv[]) {
+	::testing::InitGoogleTest(&argc, argv);
+	RUN_ALL_TESTS();
 }
