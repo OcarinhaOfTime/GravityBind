@@ -147,6 +147,7 @@
   <ItemGroup>
     <ClCompile Include="..\Middleware\gtest\src\gtest-all.cc" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="PlaneTests.cpp" />
     <ClCompile Include="Vector2DTests.cpp" />
     <ClCompile Include="Vector3Tests.cpp" />
   </ItemGroup>

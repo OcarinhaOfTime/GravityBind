@@ -5,5 +5,6 @@
     <ClCompile Include="..\Middleware\gtest\src\gtest-all.cc" />
     <ClCompile Include="Vector2DTests.cpp" />
     <ClCompile Include="Vector3Tests.cpp" />
+    <ClCompile Include="PlaneTests.cpp" />
   </ItemGroup>
 </Project>

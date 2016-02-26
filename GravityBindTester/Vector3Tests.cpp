@@ -69,3 +69,13 @@ TEST(Vector3Test, VectorTriangleInnequality) {
 	EXPECT_TRUE((vec1 + vec2).magnitude() <= vec1.magnitude() + vec2.magnitude());
 	//EXPECT_TRUE((vec1 + vec3).magnitude() == vec1.magnitude() + vec3.magnitude());
 }
+
+TEST(Vector3Test, CrossTest) {
+	Vector3 w(1, -7, 1);
+	Vector3 v(5, 2, 4);
+	Vector3 u(Vector3::cross(w, v));
+	cout << u << endl;
+	EXPECT_EQ(u * w, 0);
+	EXPECT_EQ(u * v, 0);
+	//EXPECT_TRUE((vec1 + vec3).magnitude() == vec1.magnitude() + vec3.magnitude());
+}

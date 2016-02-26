@@ -27,6 +27,13 @@ namespace GravityBind {
 		static Vector3 one() {
 			return Vector3(1, 1, 1);
 		}
+
+		static Vector3 cross(const Vector3& left, const Vector3& right) {
+
+			return Vector3(left.y * right.z - left.z * right.y,
+				left.z * right.x - left.x * right.z,
+				left.x * right.y - left.y * right.x);
+		}
 	};
 
 	inline Vector3 operator+(const Vector3& left, const Vector3& right) {
@@ -55,10 +62,6 @@ namespace GravityBind {
 
 	inline float dot(const Vector3& left, const Vector3& right) {
 		return left.x * right.x + left.y * right.y + left.z * right.z;
-	}
-
-	inline Vector3 cross(const Vector3& left, const Vector3& right) {
-		return Vector3();
 	}
 
 	inline bool operator==(const Vector3& left, const Vector3& right) {
